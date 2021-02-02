@@ -157,6 +157,10 @@ const styles = StyleSheet.create({
 		lineHeight: 20,
 		marginTop: 10,
 		color: colors.red
+	},
+	outline: {
+		...fontStyles.normal,
+		fontSize: 16
 	}
 });
 
@@ -447,6 +451,7 @@ class Login extends PureComponent {
 				<View style={styles.areYouSure}>
 					<Text style={[styles.heading, styles.delete]}>{strings('login.type_delete')}</Text>
 					<OutlinedTextField
+						style={styles.outline}
 						autoFocus
 						returnKeyType={'done'}
 						onChangeText={this.checkDelete}
@@ -480,6 +485,7 @@ class Login extends PureComponent {
 						<View style={styles.field}>
 							<Text style={styles.label}>{strings('login.password')}</Text>
 							<OutlinedTextField
+								style={styles.outline}
 								placeholder={'Password'}
 								testID={'login-password-input'}
 								returnKeyType={'done'}
