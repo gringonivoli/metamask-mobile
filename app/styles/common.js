@@ -13,6 +13,7 @@ export const colors = {
 	fontWarning: '#f66a0a',
 	primaryFox: '#f66a0a',
 	black: '#000000',
+	black000: '#24292E',
 	white: '#FFFFFF',
 	white100: '#F9FAFB',
 	grey450: '#8E8E93',
