@@ -601,8 +601,8 @@ class Onboarding extends PureComponent {
 	}
 
 	handleSimpleNotification = () => {
-		const notificationTitle = 'Wallet succesfully erased';
-		const notificationStatus = 'success';
+		const notificationTitle = strings('onboarding.wallet_erased');
+		const notificationStatus = strings('onboarding.success');
 		return (
 			<ElevatedView style={styles.modalTypeView} elevation={100}>
 				<Animated.View
